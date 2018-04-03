@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quoctuan.demoretrofit.SignUpActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký tài khoản"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:src="@drawable/ic_image_black_24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp" />
+
+
+    <EditText
+        android:id="@+id/edit_name_sign_up"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Nhập tên tài khoản"/>
+
+    <EditText
+        android:id="@+id/edit_pass_sign_up"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Nhập mật khẩu"/>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:text="Hủy"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_alignParentRight="true"
+            android:text="Xác nhận"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>
